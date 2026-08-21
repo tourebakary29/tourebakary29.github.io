@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    // Apply saved theme before first paint to avoid a light/dark flash.
+    (function () {
+      try {
+        var saved = localStorage.getItem("bt-portfolio-theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakary TOURE | Data Analyst Junior</title>
+  <meta name="description" content="Portfolio de Bakary TOURE, Data Analyst Junior disponible pour tout projet de data analyse, visualisation et reporting décisionnel." />
+  <meta name="author" content="Bakary TOURE" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bakary TOURE | Data Analyst Junior" />
+  <meta property="og:description" content="Data Analyst Junior disponible pour tout projet de data analyse, visualisation et reporting décisionnel." />
+  <meta property="og:image" content="assets/bakary-toure.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS (scroll animations) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="logo">BT<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav.home">Accueil</a>
+        <a href="#about" data-i18n="nav.about">À propos</a>
+        <a href="#skills" data-i18n="nav.skills">Compétences</a>
+        <a href="#projects" data-i18n="nav.projects">Projets</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#timeline" data-i18n="nav.timeline">Parcours</a>
+        <a href="#testimonials" data-i18n="nav.testimonials">Témoignages</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">
+          <span class="lang-fr active">FR</span> / <span class="lang-en">EN</span>
+        </button>
+        <button id="darkModeToggle" class="icon-btn" type="button" aria-label="Basculer le mode sombre">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button id="menuToggle" class="icon-btn menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text" data-aos="fade-right">
+          <p class="hero-greeting" data-i18n="hero.greeting">Bonjour, je suis</p>
+          <h1 class="hero-name">Bakary TOURE</h1>
+          <h2 class="hero-role"><span id="typedRole"></span></h2>
+          <p class="hero-description" data-i18n="hero.description">
+            Disponible pour tout projet de data analyse, visualisation et reporting décisionnel.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" data-i18n="hero.btnProjects">Voir mes projets</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="hero.btnContact">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero-photo" data-aos="fade-left">
+          <div class="hero-photo-glow"></div>
+          <img src="assets/bakary-toure.jpg" alt="Bakary Touré - Data Analyst" width="360" height="360" />
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Défiler vers le bas">
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag" data-i18n="about.subtitle">Transformer les données en décisions</span>
+          <h2 data-i18n="about.title">À propos de moi</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo" data-aos="fade-right">
+            <img src="assets/bakary-toure.jpg" alt="Bakary Touré" width="280" height="280" loading="lazy" />
+          </div>
+          <div class="about-text" data-aos="fade-left">
+            <p data-i18n="about.p1"></p>
+            <p data-i18n="about.p2"></p>
+            <div class="about-stats" id="aboutStats"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag" data-i18n="skills.subtitle">Les outils que j'utilise au quotidien</span>
+          <h2 data-i18n="skills.title">Compétences techniques</h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag" data-i18n="projects.subtitle">Une sélection de projets d'analyse de données</span>
+          <h2 data-i18n="projects.title">Projets</h2>
+        </div>
+        <div class="filter-bar" id="filterBar" data-aos="fade-up"></div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag" data-i18n="services.subtitle">Ce que je peux faire pour votre entreprise</span>
+          <h2 data-i18n="services.title">Services</h2>
+        </div>
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="section timeline">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag" data-i18n="timeline.subtitle">Les étapes clés de mon évolution professionnelle</span>
+          <h2 data-i18n="timeline.title">Parcours &amp; Expérience</h2>
+        </div>
+        <div class="timeline-list" id="timelineList"></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag" data-i18n="testimonials.subtitle">Ce que mes clients et collaborateurs disent</span>
+          <h2 data-i18n="testimonials.title">Témoignages</h2>
+        </div>
+        <div class="testimonial-slider" id="testimonialSlider" data-aos="fade-up">
+          <button class="slider-arrow slider-prev" id="sliderPrev" type="button" aria-label="Témoignage précédent">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="slider-track-wrapper">
+            <div class="slider-track" id="sliderTrack"></div>
+          </div>
+          <button class="slider-arrow slider-next" id="sliderNext" type="button" aria-label="Témoignage suivant">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag" data-i18n="contact.subtitle">Discutons de votre prochain projet data</span>
+          <h2 data-i18n="contact.title">Contact</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <h3 data-i18n="contact.infoTitle">Mes coordonnées</h3>
+            <p class="contact-availability" data-i18n="contact.availability">Disponible pour missions freelance et projets ponctuels.</p>
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <div>
+                  <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
+                  <a href="mailto:tourebakary1234@gmail.com">tourebakary1234@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                <div>
+                  <span class="contact-label" data-i18n="contact.phoneLabel">Téléphone / WhatsApp</span>
+                  <a href="https://wa.me/221781374017" target="_blank" rel="noopener noreferrer">+221 78 137 40 17</a>
+                </div>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                <div>
+                  <span class="contact-label" data-i18n="contact.linkedinLabel">LinkedIn</span>
+                  <a href="https://linkedin.com/in/bakary-toure" target="_blank" rel="noopener noreferrer">linkedin.com/in/bakary-toure</a>
+                </div>
+              </li>
+              <li>
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <div>
+                  <span class="contact-label" data-i18n="contact.githubLabel">GitHub</span>
+                  <a href="https://github.com/tourebakary29" target="_blank" rel="noopener noreferrer">github.com/tourebakary29</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!--
+            Formspree setup:
+            1. Create a form at https://formspree.io using tourebakary1234@gmail.com
+            2. Replace VOTRE_ID_FORMSPREE below with the form ID Formspree gives you
+               (the action becomes https://formspree.io/f/xxxxabcd)
+          -->
+          <form class="contact-form" id="contactForm" data-aos="fade-left" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.formName">Nom complet</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.formEmail">Adresse email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.formMessage">Votre message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit" id="formSubmit">
+              <span data-i18n="contact.formSend">Envoyer le message</span>
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">BT<span>.</span></span>
+        <p data-i18n="footer.tagline">Transformer vos données en décisions stratégiques.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/bakary-toure" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://wa.me/221781374017" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://github.com/tourebakary29" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a href="mailto:tourebakary1234@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Bakary TOURE. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a href="https://wa.me/221781374017" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Discuter sur WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Retour en haut">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
