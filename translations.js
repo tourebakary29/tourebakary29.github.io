@@ -77,9 +77,9 @@ const translations = {
             "Étude statistique sur SPSS d'une enquête de satisfaction client : tests d'hypothèses, corrélations et recommandations concrètes.",
         },
         p4: {
-          title: "Tableau de bord Excel automatisé",
+          title: "Analyse des Performances de Vente — Afrique de l'Ouest",
           description:
-            "Reporting Excel automatisé avec tableaux croisés dynamiques et macros, réduisant le temps de production des rapports mensuels.",
+            "Dashboard Excel avancé analysant les performances commerciales d'une entreprise multi-pays (Sénégal, Côte d'Ivoire, Mali, Togo). Modèle de données en étoile avec tableaux croisés dynamiques, Power Pivot, et segments interactifs pour un filtrage dynamique par région, produit et vendeur.",
         },
         p5: {
           title: "Analyse STATA de données économiques",
@@ -345,9 +345,9 @@ const translations = {
             "Statistical study in SPSS on a customer satisfaction survey: hypothesis testing, correlations and concrete recommendations.",
         },
         p4: {
-          title: "Automated Excel Dashboard",
+          title: "West Africa Sales Performance Analysis",
           description:
-            "Automated Excel reporting with pivot tables and macros, cutting the time needed to produce monthly reports.",
+            "Advanced Excel dashboard analyzing sales performance for a multi-country company (Senegal, Ivory Coast, Mali, Togo). Star-schema data model with pivot tables, Power Pivot, and interactive slicers for dynamic filtering by region, product and sales rep.",
         },
         p5: {
           title: "STATA Economic Data Analysis",
@@ -581,9 +581,9 @@ const sharedData = {
     },
     {
       id: "p4",
-      tags: ["Excel"],
+      tags: ["Excel", "Power Pivot"],
       image: "assets/projects/excel-auto.svg",
-      link: "#",
+      codeUrl: "https://github.com/tourebakary29/sales-excel-analysis",
     },
     {
       id: "p5",
