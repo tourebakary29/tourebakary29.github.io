@@ -40,9 +40,9 @@ const translations = {
       title: "À propos de moi",
       subtitle: "Transformer les données en décisions",
       p1: "Data Analyst junior passionné, je me spécialise dans la transformation de données brutes en informations claires et exploitables pour la prise de décision. Curieux et rigoureux, j'aime explorer les chiffres pour en extraire des tendances utiles aux équipes métier.",
-      p2: "Formé aux outils statistiques et de visualisation (SQL, R, STATA, SPSS, Excel, Power BI, Tableau), j'accompagne les entreprises dans leurs projets de reporting décisionnel : nettoyage de données, analyse statistique, création de tableaux de bord et automatisation des rapports.",
+      p2: "Formé aux outils statistiques et de visualisation (SQL, R, STATA, SPSS, Excel, Power BI, Tableau, MS Project, QGIS), j'accompagne les entreprises dans leurs projets de reporting décisionnel : nettoyage de données, analyse statistique, création de tableaux de bord et automatisation des rapports.",
       stats: [
-        { value: "7", label: "outils maîtrisés" },
+        { value: "9", label: "outils maîtrisés" },
         { value: "15+", label: "projets réalisés" },
         { value: "100%", label: "engagement qualité" },
       ],
@@ -286,9 +286,9 @@ const translations = {
       title: "About me",
       subtitle: "Turning data into decisions",
       p1: "Passionate junior Data Analyst, I specialize in turning raw data into clear, actionable insights for decision-making. Curious and rigorous, I enjoy digging into numbers to surface trends that matter to business teams.",
-      p2: "Trained in statistical and visualization tools (SQL, R, STATA, SPSS, Excel, Power BI, Tableau), I support companies with their business reporting projects: data cleaning, statistical analysis, dashboard creation and report automation.",
+      p2: "Trained in statistical and visualization tools (SQL, R, STATA, SPSS, Excel, Power BI, Tableau, MS Project, QGIS), I support companies with their business reporting projects: data cleaning, statistical analysis, dashboard creation and report automation.",
       stats: [
-        { value: "7", label: "tools mastered" },
+        { value: "9", label: "tools mastered" },
         { value: "15+", label: "projects delivered" },
         { value: "100%", label: "quality commitment" },
       ],
@@ -512,8 +512,10 @@ const sharedData = {
     { key: "excel", name: "Excel", icon: "fa-file-excel", level: 95 },
     { key: "powerbi", name: "Power BI", icon: "fa-chart-column", level: 90 },
     { key: "tableau", name: "Tableau", icon: "fa-table-cells", level: 85 },
+    { key: "msproject", name: "MS Project", icon: "fa-diagram-project", level: 78 },
+    { key: "qgis", name: "QGIS", icon: "fa-earth-africa", level: 75 },
   ],
-  filterTags: ["SQL", "R", "STATA", "SPSS", "Excel", "Power BI", "Tableau"],
+  filterTags: ["SQL", "R", "STATA", "SPSS", "Excel", "Power BI", "Tableau", "MS Project", "QGIS"],
   projects: [
     {
       id: "p1",
