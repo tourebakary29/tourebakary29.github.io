@@ -92,9 +92,9 @@ const translations = {
             "Dashboard Tableau interactif permettant d'explorer dynamiquement les données de performance d'une chaîne logistique.",
         },
         p7: {
-          title: "Modèle prédictif en R",
+          title: "Prédiction de Rendement Agricole",
           description:
-            "Modèle de prévision sous R basé sur des séries temporelles pour anticiper la demande et optimiser la gestion des stocks.",
+            "Modélisation prédictive du rendement agricole au Sénégal à partir de données de pluviométrie, température et usage d'engrais. Nettoyage d'un dataset de plus de 6 000 exploitations, entraînement d'un modèle de régression (R² de 0.93), et dashboard interactif avec simulateur de prédiction de rendement en temps réel.",
         },
         p8: {
           title: "Planification de projet sous MS Project",
@@ -355,9 +355,9 @@ const translations = {
             "Interactive Tableau dashboard for dynamically exploring a supply chain's performance data.",
         },
         p7: {
-          title: "Predictive Model in R",
+          title: "Agricultural Yield Prediction",
           description:
-            "Forecasting model built in R using time series to anticipate demand and optimize inventory management.",
+            "Predictive modeling of agricultural yield in Senegal using rainfall, temperature and fertilizer data. Cleaning a dataset of over 6,000 farms, training a regression model (R² of 0.93), and an interactive dashboard with a real-time yield prediction simulator.",
         },
         p8: {
           title: "Project Planning in MS Project",
@@ -589,9 +589,10 @@ const sharedData = {
     },
     {
       id: "p7",
-      tags: ["R"],
+      tags: ["R", "tidyverse", "Machine Learning", "Shiny"],
       image: "assets/projects/r-model.svg",
-      link: "#",
+      codeUrl: "https://github.com/tourebakary29/agri-yield-dashboard",
+      demoUrl: "https://bakary-health-analytics.shinyapps.io/agri-project/",
     },
     {
       id: "p8",
