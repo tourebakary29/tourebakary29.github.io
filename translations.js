@@ -94,6 +94,16 @@ const translations = {
           description:
             "Modèle de prévision sous R basé sur des séries temporelles pour anticiper la demande et optimiser la gestion des stocks.",
         },
+        p8: {
+          title: "Planification de projet sous MS Project",
+          description:
+            "Planning détaillé et suivi d'avancement d'un projet multi-équipes sous MS Project : jalons, chemin critique et allocation des ressources.",
+        },
+        p9: {
+          title: "Analyse géospatiale sous QGIS",
+          description:
+            "Cartographie et analyse spatiale sous QGIS pour identifier des zones prioritaires d'intervention à partir de données terrain géoréférencées.",
+        },
       },
     },
     services: {
@@ -340,6 +350,16 @@ const translations = {
           description:
             "Forecasting model built in R using time series to anticipate demand and optimize inventory management.",
         },
+        p8: {
+          title: "Project Planning in MS Project",
+          description:
+            "Detailed schedule and progress tracking for a multi-team project in MS Project: milestones, critical path and resource allocation.",
+        },
+        p9: {
+          title: "Geospatial Analysis in QGIS",
+          description:
+            "Mapping and spatial analysis in QGIS to identify priority intervention areas from georeferenced field data.",
+        },
       },
     },
     services: {
@@ -557,6 +577,18 @@ const sharedData = {
       id: "p7",
       tags: ["R"],
       image: "assets/projects/r-model.svg",
+      link: "#",
+    },
+    {
+      id: "p8",
+      tags: ["MS Project"],
+      image: "assets/projects/msproject-planning.svg",
+      link: "#",
+    },
+    {
+      id: "p9",
+      tags: ["QGIS"],
+      image: "assets/projects/qgis-cartographie.svg",
       link: "#",
     },
   ],
