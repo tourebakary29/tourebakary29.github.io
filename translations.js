@@ -111,6 +111,11 @@ const translations = {
           description:
             "Analyse de données de consultations médicales en Afrique subsaharienne : nettoyage d'un dataset brut de plus de 10 000 lignes, calcul d'indicateurs clés (régions, diagnostics, coûts de traitement, couverture d'assurance), et création d'un dashboard interactif permettant d'explorer les données par région et par pathologie.",
         },
+        p11: {
+          title: "Détection de Fraude Mobile Money",
+          description:
+            "Détection de transactions frauduleuses sur des paiements mobile money en Afrique de l'Ouest. Nettoyage d'un dataset de plus de 8 000 transactions, entraînement d'un modèle de classification par régression logistique (93% de précision), et dashboard interactif avec simulateur de score de risque en temps réel.",
+        },
       },
     },
     services: {
@@ -374,6 +379,11 @@ const translations = {
           description:
             "Analysis of medical consultation data across Sub-Saharan Africa: cleaning a raw dataset of over 10,000 records, computing key indicators (regions, diagnoses, treatment costs, insurance coverage), and building an interactive dashboard to explore the data by region and condition.",
         },
+        p11: {
+          title: "Mobile Money Fraud Detection",
+          description:
+            "Fraud detection on mobile money payments across West Africa. Cleaning a dataset of over 8,000 transactions, training a logistic regression classification model (93% accuracy), and an interactive dashboard with a real-time fraud risk score simulator.",
+        },
       },
     },
     services: {
@@ -612,6 +622,13 @@ const sharedData = {
       image: "assets/projects/health-analytics.svg",
       codeUrl: "https://github.com/tourebakary29/health-analytics-dashboard",
       demoUrl: "https://bakary-health-analytics.shinyapps.io/health-clean/",
+    },
+    {
+      id: "p11",
+      tags: ["R", "tidyverse", "Classification", "Shiny"],
+      image: "assets/projects/fraud-detection.svg",
+      codeUrl: "https://github.com/tourebakary29/fraud-detection-dashboard",
+      demoUrl: "https://bakary-health-analytics.shinyapps.io/fraud-project/",
     },
   ],
   testimonials: [
