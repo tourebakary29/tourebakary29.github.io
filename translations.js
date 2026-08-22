@@ -62,9 +62,9 @@ const translations = {
       viewDemo: "Voir la démo",
       items: {
         p1: {
-          title: "Dashboard Power BI — Ventes",
+          title: "Dashboard Power BI — Performance des Ventes",
           description:
-            "Tableau de bord interactif Power BI présentant les performances de vente par région, produit et période, avec des indicateurs clés actualisés automatiquement.",
+            "Tableau de bord interactif Power BI analysant les performances de ventes d'une entreprise agroalimentaire fictive au Sénégal. Nettoyage des données via Power Query, création de mesures DAX (total ventes, panier moyen), et visualisations multiples avec filtres dynamiques par région, catégorie et canal de vente.",
         },
         p2: {
           title: "Analyse SQL des performances commerciales",
@@ -330,9 +330,9 @@ const translations = {
       viewDemo: "View demo",
       items: {
         p1: {
-          title: "Power BI Dashboard — Sales",
+          title: "Power BI Dashboard — Sales Performance",
           description:
-            "Interactive Power BI dashboard showing sales performance by region, product and period, with key metrics refreshed automatically.",
+            "Interactive Power BI dashboard analyzing sales performance for a fictional agri-food company in Senegal. Data cleaning via Power Query, DAX measures (total sales, average basket), and multiple visualizations with dynamic filters by region, category and sales channel.",
         },
         p2: {
           title: "SQL Analysis of Sales Performance",
@@ -563,9 +563,9 @@ const sharedData = {
   projects: [
     {
       id: "p1",
-      tags: ["Power BI", "Excel"],
+      tags: ["Power BI", "DAX", "Power Query", "Business Intelligence"],
       image: "assets/projects/dashboard-ventes.svg",
-      link: "#",
+      codeUrl: "https://github.com/tourebakary29/sales-powerbi-dashboard",
     },
     {
       id: "p2",
