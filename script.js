@@ -181,10 +181,35 @@
     const grid = document.getElementById("projectsGrid");
     if (!grid) return;
     const viewLabel = t("projects.viewProject");
+    const codeLabel = t("projects.viewCode");
+    const demoLabel = t("projects.viewDemo");
 
     grid.innerHTML = sharedData.projects
       .map((project) => {
         const text = t(`projects.items.${project.id}`) || {};
+        const links =
+          project.codeUrl || project.demoUrl
+            ? `
+            <div class="project-links">
+              ${
+                project.codeUrl
+                  ? `<a class="project-link" href="${project.codeUrl}" target="_blank" rel="noopener noreferrer">
+                       <i class="fa-brands fa-github" aria-hidden="true"></i> ${codeLabel}
+                     </a>`
+                  : ""
+              }
+              ${
+                project.demoUrl
+                  ? `<a class="project-link" href="${project.demoUrl}" target="_blank" rel="noopener noreferrer">
+                       ${demoLabel} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                     </a>`
+                  : ""
+              }
+            </div>`
+            : `<a class="project-link" href="${project.link}" target="_blank" rel="noopener noreferrer">
+                 ${viewLabel} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+               </a>`;
+
         return `
         <article class="project-card" data-tags="${project.tags.join("|")}">
           <div class="project-thumb">
@@ -196,9 +221,7 @@
             <div class="project-tags">
               ${project.tags.map((tag) => `<span class="project-tag">${tag}</span>`).join("")}
             </div>
-            <a class="project-link" href="${project.link}" target="_blank" rel="noopener noreferrer">
-              ${viewLabel} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-            </a>
+            ${links}
           </div>
         </article>`;
       })

@@ -58,6 +58,8 @@ const translations = {
         all: "Tous",
       },
       viewProject: "Voir le projet",
+      viewCode: "Voir le code",
+      viewDemo: "Voir la démo",
       items: {
         p1: {
           title: "Dashboard Power BI — Ventes",
@@ -103,6 +105,11 @@ const translations = {
           title: "Analyse géospatiale sous QGIS",
           description:
             "Cartographie et analyse spatiale sous QGIS pour identifier des zones prioritaires d'intervention à partir de données terrain géoréférencées.",
+        },
+        p10: {
+          title: "Dashboard d'Analyse de Santé Publique",
+          description:
+            "Analyse de données de consultations médicales en Afrique subsaharienne : nettoyage d'un dataset brut de plus de 10 000 lignes, calcul d'indicateurs clés (régions, diagnostics, coûts de traitement, couverture d'assurance), et création d'un dashboard interactif permettant d'explorer les données par région et par pathologie.",
         },
       },
     },
@@ -314,6 +321,8 @@ const translations = {
         all: "All",
       },
       viewProject: "View project",
+      viewCode: "View code",
+      viewDemo: "View demo",
       items: {
         p1: {
           title: "Power BI Dashboard — Sales",
@@ -359,6 +368,11 @@ const translations = {
           title: "Geospatial Analysis in QGIS",
           description:
             "Mapping and spatial analysis in QGIS to identify priority intervention areas from georeferenced field data.",
+        },
+        p10: {
+          title: "Public Health Analytics Dashboard",
+          description:
+            "Analysis of medical consultation data across Sub-Saharan Africa: cleaning a raw dataset of over 10,000 records, computing key indicators (regions, diagnoses, treatment costs, insurance coverage), and building an interactive dashboard to explore the data by region and condition.",
         },
       },
     },
@@ -590,6 +604,13 @@ const sharedData = {
       tags: ["QGIS"],
       image: "assets/projects/qgis-cartographie.svg",
       link: "#",
+    },
+    {
+      id: "p10",
+      tags: ["R", "tidyverse", "Shiny"],
+      image: "assets/projects/health-analytics.svg",
+      codeUrl: "https://github.com/tourebakary29/health-analytics-dashboard",
+      demoUrl: "https://bakary-health-analytics.shinyapps.io/health-clean/",
     },
   ],
   testimonials: [
