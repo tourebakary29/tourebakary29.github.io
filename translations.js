@@ -67,9 +67,9 @@ const translations = {
             "Tableau de bord interactif Power BI analysant les performances de ventes d'une entreprise agroalimentaire fictive au Sénégal. Nettoyage des données via Power Query, création de mesures DAX (total ventes, panier moyen), et visualisations multiples avec filtres dynamiques par région, catégorie et canal de vente.",
         },
         p2: {
-          title: "Analyse SQL des performances commerciales",
+          title: "Analyse de Données Bancaires — SQL",
           description:
-            "Requêtes SQL avancées pour extraire, croiser et analyser les données de vente d'une entreprise afin d'identifier les leviers de croissance.",
+            "Base de données relationnelle et requêtes SQL analytiques pour une banque fictive multi-pays d'Afrique de l'Ouest. Modèle de données avec 7 tables reliées (clients, comptes, transactions, prêts), et 11 requêtes démontrant jointures, CTE, fonctions de fenêtrage (RANK, SUM OVER, LAG) et vues SQL.",
         },
         p3: {
           title: "Analyse statistique SPSS",
@@ -335,9 +335,9 @@ const translations = {
             "Interactive Power BI dashboard analyzing sales performance for a fictional agri-food company in Senegal. Data cleaning via Power Query, DAX measures (total sales, average basket), and multiple visualizations with dynamic filters by region, category and sales channel.",
         },
         p2: {
-          title: "SQL Analysis of Sales Performance",
+          title: "Banking Data Analysis — SQL",
           description:
-            "Advanced SQL queries to extract, cross-reference and analyze a company's sales data in order to identify growth drivers.",
+            "Relational database and analytical SQL queries for a fictional multi-country West African bank. Data model with 7 related tables (customers, accounts, transactions, loans), and 11 queries demonstrating joins, CTEs, window functions (RANK, SUM OVER, LAG) and SQL views.",
         },
         p3: {
           title: "SPSS Statistical Analysis",
@@ -569,9 +569,9 @@ const sharedData = {
     },
     {
       id: "p2",
-      tags: ["SQL"],
+      tags: ["SQL", "PostgreSQL"],
       image: "assets/projects/sql-performance.svg",
-      link: "#",
+      codeUrl: "https://github.com/tourebakary29/sql-banking-analysis",
     },
     {
       id: "p3",
