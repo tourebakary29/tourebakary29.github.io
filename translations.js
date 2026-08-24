@@ -116,6 +116,11 @@ const translations = {
           description:
             "Détection de transactions frauduleuses sur des paiements mobile money en Afrique de l'Ouest. Nettoyage d'un dataset de plus de 8 000 transactions, entraînement d'un modèle de classification par régression logistique (93% de précision), et dashboard interactif avec simulateur de score de risque en temps réel.",
         },
+        p12: {
+          title: "Prédiction de Production d'Énergie Solaire — Machine Learning",
+          description:
+            "Pipeline complet de Machine Learning en Python pour prédire la production horaire d'une ferme solaire de 500 kW au Sénégal. Comparaison de 3 modèles (Régression Linéaire, Random Forest, XGBoost) avec split temporel strict, atteignant un R² de 0.99. Dashboard interactif Streamlit avec simulateur de prédiction en temps réel.",
+        },
       },
     },
     services: {
@@ -384,6 +389,11 @@ const translations = {
           description:
             "Fraud detection on mobile money payments across West Africa. Cleaning a dataset of over 8,000 transactions, training a logistic regression classification model (93% accuracy), and an interactive dashboard with a real-time fraud risk score simulator.",
         },
+        p12: {
+          title: "Solar Energy Production Prediction — Machine Learning",
+          description:
+            "Complete Machine Learning pipeline in Python predicting hourly production of a 500 kW solar farm in Senegal. Comparison of 3 models (Linear Regression, Random Forest, XGBoost) with strict temporal split, achieving R² of 0.99. Interactive Streamlit dashboard with real-time prediction simulator.",
+        },
       },
     },
     services: {
@@ -629,6 +639,13 @@ const sharedData = {
       image: "assets/projects/fraud-detection.svg",
       codeUrl: "https://github.com/tourebakary29/fraud-detection-dashboard",
       demoUrl: "https://bakary-health-analytics.shinyapps.io/fraud-project/",
+    },
+    {
+      id: "p12",
+      tags: ["Python", "Machine Learning", "Scikit-learn", "Streamlit"],
+      image: "assets/projects/solar-energy.svg",
+      codeUrl: "https://github.com/tourebakary29/solar-energy-prediction",
+      demoUrl: "https://solar-energy-prediction-cripbyshdij7y94x9mitwm.streamlit.app",
     },
   ],
   testimonials: [
