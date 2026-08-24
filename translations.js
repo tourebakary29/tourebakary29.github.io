@@ -72,9 +72,9 @@ const translations = {
             "Base de données relationnelle et requêtes SQL analytiques pour une banque fictive multi-pays d'Afrique de l'Ouest. Modèle de données avec 7 tables reliées (clients, comptes, transactions, prêts), et 11 requêtes démontrant jointures, CTE, fonctions de fenêtrage (RANK, SUM OVER, LAG) et vues SQL.",
         },
         p3: {
-          title: "Analyse statistique SPSS",
+          title: "Étude de Satisfaction Client du Secteur Télécom",
           description:
-            "Étude statistique sur SPSS d'une enquête de satisfaction client : tests d'hypothèses, corrélations et recommandations concrètes.",
+            "Analyse d'une enquête de satisfaction client fictive avec SPSS pour un opérateur télécom. Test de fiabilité d'échelle (Alpha de Cronbach), ANOVA, corrélations, régression linéaire et logistique pour identifier les déterminants de la satisfaction et prédire le risque de départ (churn).",
         },
         p4: {
           title: "Analyse des Performances de Vente — Afrique de l'Ouest",
@@ -82,9 +82,9 @@ const translations = {
             "Dashboard Excel avancé analysant les performances commerciales d'une entreprise multi-pays (Sénégal, Côte d'Ivoire, Mali, Togo). Modèle de données en étoile avec tableaux croisés dynamiques, Power Pivot, et segments interactifs pour un filtrage dynamique par région, produit et vendeur.",
         },
         p5: {
-          title: "Analyse STATA de données économiques",
+          title: "Déterminants du Salaire, Analyse Économétrique",
           description:
-            "Modélisation économétrique sous STATA sur des données macroéconomiques pour évaluer l'impact de politiques publiques.",
+            "Analyse économétrique des déterminants du salaire à partir d'une enquête emploi fictive au Sénégal. Estimation d'une équation de gains à la Mincer avec Stata : effet de l'éducation, de l'expérience, du secteur d'activité et du genre sur les niveaux de salaire, avec tests de diagnostic (hétéroscédasticité, multicolinéarité).",
         },
         p6: {
           title: "Visualisation Tableau interactive",
@@ -340,9 +340,9 @@ const translations = {
             "Relational database and analytical SQL queries for a fictional multi-country West African bank. Data model with 7 related tables (customers, accounts, transactions, loans), and 11 queries demonstrating joins, CTEs, window functions (RANK, SUM OVER, LAG) and SQL views.",
         },
         p3: {
-          title: "SPSS Statistical Analysis",
+          title: "Customer Satisfaction Study of the Telecom Sector",
           description:
-            "Statistical study in SPSS on a customer satisfaction survey: hypothesis testing, correlations and concrete recommendations.",
+            "Analysis of a fictional customer satisfaction survey with SPSS for a telecom operator. Scale reliability testing (Cronbach's Alpha), ANOVA, correlations, linear and logistic regression to identify satisfaction determinants and predict churn risk.",
         },
         p4: {
           title: "West Africa Sales Performance Analysis",
@@ -350,9 +350,9 @@ const translations = {
             "Advanced Excel dashboard analyzing sales performance for a multi-country company (Senegal, Ivory Coast, Mali, Togo). Star-schema data model with pivot tables, Power Pivot, and interactive slicers for dynamic filtering by region, product and sales rep.",
         },
         p5: {
-          title: "STATA Economic Data Analysis",
+          title: "Wage Determinants, Econometric Analysis",
           description:
-            "Econometric modeling in STATA on macroeconomic data to assess the impact of public policies.",
+            "Econometric analysis of wage determinants using a fictional employment survey in Senegal. Mincer wage equation estimation with Stata: effects of education, experience, sector and gender on wage levels, with diagnostic tests (heteroskedasticity, multicollinearity).",
         },
         p6: {
           title: "Interactive Tableau Visualization",
@@ -575,9 +575,9 @@ const sharedData = {
     },
     {
       id: "p3",
-      tags: ["SPSS"],
+      tags: ["SPSS", "ANOVA"],
       image: "assets/projects/spss-stats.svg",
-      link: "#",
+      codeUrl: "https://github.com/tourebakary29/spss-satisfaction-study",
     },
     {
       id: "p4",
@@ -589,7 +589,7 @@ const sharedData = {
       id: "p5",
       tags: ["STATA"],
       image: "assets/projects/stata-eco.svg",
-      link: "#",
+      codeUrl: "https://github.com/tourebakary29/stata-wage-analysis",
     },
     {
       id: "p6",
