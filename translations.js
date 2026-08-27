@@ -87,9 +87,9 @@ const translations = {
             "Analyse économétrique des déterminants du salaire à partir d'une enquête emploi fictive au Sénégal. Estimation d'une équation de gains à la Mincer avec Stata : effet de l'éducation, de l'expérience, du secteur d'activité et du genre sur les niveaux de salaire, avec tests de diagnostic (hétéroscédasticité, multicolinéarité).",
         },
         p6: {
-          title: "Visualisation Tableau interactive",
+          title: "Dashboard Logistique Chaîne d'Approvisionnement",
           description:
-            "Dashboard Tableau interactif permettant d'explorer dynamiquement les données de performance d'une chaîne logistique.",
+            "Dashboard Tableau analysant la performance logistique d'un réseau de distribution en Afrique de l'Ouest : ponctualité des livraisons par transporteur, coûts de transport par destination, et taux de casse par catégorie de produit, sur 6000 livraisons.",
         },
         p7: {
           title: "Prédiction de Rendement Agricole",
@@ -102,9 +102,9 @@ const translations = {
             "Planning détaillé et suivi d'avancement d'un projet multi-équipes sous MS Project : jalons, chemin critique et allocation des ressources.",
         },
         p9: {
-          title: "Analyse géospatiale sous QGIS",
+          title: "Accessibilité aux Centres de Santé (SIG)",
           description:
-            "Cartographie et analyse spatiale sous QGIS pour identifier des zones prioritaires d'intervention à partir de données terrain géoréférencées.",
+            "Analyse spatiale de l'accessibilité aux établissements de santé au Sénégal avec QGIS. Cartographie de 135 établissements sur le vrai contour national, calcul de zones de couverture (buffers 10km), et identification des zones sous-desservies : 87% du territoire national à plus de 10km de tout établissement de santé.",
         },
         p10: {
           title: "Dashboard d'Analyse de Santé Publique",
@@ -360,9 +360,9 @@ const translations = {
             "Econometric analysis of wage determinants using a fictional employment survey in Senegal. Mincer wage equation estimation with Stata: effects of education, experience, sector and gender on wage levels, with diagnostic tests (heteroskedasticity, multicollinearity).",
         },
         p6: {
-          title: "Interactive Tableau Visualization",
+          title: "Logistics Dashboard Supply Chain",
           description:
-            "Interactive Tableau dashboard for dynamically exploring a supply chain's performance data.",
+            "Tableau dashboard analyzing logistics performance for a West African distribution network: on-time delivery rate by carrier, freight costs by destination, and damage rate by product category, across 6,000 shipments.",
         },
         p7: {
           title: "Agricultural Yield Prediction",
@@ -375,9 +375,9 @@ const translations = {
             "Detailed schedule and progress tracking for a multi-team project in MS Project: milestones, critical path and resource allocation.",
         },
         p9: {
-          title: "Geospatial Analysis in QGIS",
+          title: "Health Facility Accessibility (GIS Analysis)",
           description:
-            "Mapping and spatial analysis in QGIS to identify priority intervention areas from georeferenced field data.",
+            "Spatial analysis of health facility accessibility in Senegal using QGIS. Mapping of 135 facilities on the real national boundary, 10km coverage buffer analysis, and identification of underserved areas: 87% of the national territory is more than 10km from any health facility.",
         },
         p10: {
           title: "Public Health Analytics Dashboard",
@@ -605,7 +605,9 @@ const sharedData = {
       id: "p6",
       tags: ["Tableau"],
       image: "assets/projects/tableau-viz.svg",
-      link: "#",
+      codeUrl: "https://github.com/tourebakary29/tableau-logistics-dashboard",
+      demoUrl:
+        "https://public.tableau.com/app/profile/bakary.toure/viz/DashboardLogistique-ChainedApprovisionnement/Dashboard",
     },
     {
       id: "p7",
@@ -622,9 +624,9 @@ const sharedData = {
     },
     {
       id: "p9",
-      tags: ["QGIS"],
+      tags: ["QGIS", "PyQGIS"],
       image: "assets/projects/qgis-cartographie.svg",
-      link: "#",
+      codeUrl: "https://github.com/tourebakary29/qgis-health-accessibility",
     },
     {
       id: "p10",

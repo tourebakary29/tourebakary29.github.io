@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" role="img" aria-label="Tableau - Viz">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" role="img" aria-label="Tableau - Logistique">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0B1D3A"/>
@@ -13,5 +13,5 @@
     <rect x="280" y="140" width="60" height="200"/>
     <rect x="360" y="200" width="60" height="140"/>
   </g>
-  <text x="300" y="90" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Tableau - Viz</text>
+  <text x="300" y="90" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">Tableau - Logistique</text>
 </svg>
