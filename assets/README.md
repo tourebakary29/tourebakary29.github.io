@@ -25,7 +25,7 @@ fichier, ou en mettant à jour le champ `image` correspondant dans
 
 | Fichier | Projet |
 | --- | --- |
-| `dashboard-ventes.svg` | Dashboard Power BI — Ventes |
+| `dashboard-ventes.svg` | Dashboard Power BI, Ventes |
 | `sql-performance.svg` | Analyse SQL des performances commerciales |
 | `spss-stats.svg` | Analyse statistique SPSS |
 | `excel-auto.svg` | Tableau de bord Excel automatisé |
@@ -40,4 +40,4 @@ fichier, ou en mettant à jour le champ `image` correspondant dans
 
 ## Favicon
 
-`favicon.svg` — logo "BT" minimal utilisé comme icône d'onglet.
+`favicon.svg` : logo "BT" minimal utilisé comme icône d'onglet.

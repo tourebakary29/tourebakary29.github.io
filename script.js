@@ -299,7 +299,7 @@
             <img src="${person.photo}" alt="${person.name}" loading="lazy" />
             <div class="testimonial-person-info">
               <div class="t-name">${person.name}</div>
-              <div class="t-role">${text.role || ""} — ${person.company}</div>
+              <div class="t-role">${text.role || ""}, ${person.company}</div>
               <div class="t-country">${person.flag} ${person.country}</div>
             </div>
           </div>
@@ -435,7 +435,7 @@
   }
 
   /* ---------------------------------------------------------
-     Contact form (Formspree AJAX submission)
+     Contact form (FormSubmit AJAX submission)
      --------------------------------------------------------- */
   function initContactForm() {
     const form = document.getElementById("contactForm");
@@ -447,11 +447,6 @@
       event.preventDefault();
 
       const action = form.getAttribute("action") || "";
-      if (action.includes("VOTRE_ID_FORMSPREE")) {
-        status.textContent = t("contact.formError");
-        status.className = "form-status error";
-        return;
-      }
 
       const originalLabel = submitBtn.innerHTML;
       submitBtn.disabled = true;
@@ -460,10 +455,14 @@
       status.className = "form-status";
 
       try {
+        const payload = Object.fromEntries(new FormData(form).entries());
         const response = await fetch(action, {
           method: "POST",
-          body: new FormData(form),
-          headers: { Accept: "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(payload),
         });
 
         if (response.ok) {

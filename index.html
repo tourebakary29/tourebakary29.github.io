@@ -232,12 +232,17 @@
           </div>
 
           <!--
-            Formspree setup:
-            1. Create a form at https://formspree.io using tourebakary1234@gmail.com
-            2. Replace VOTRE_ID_FORMSPREE below with the form ID Formspree gives you
-               (the action becomes https://formspree.io/f/xxxxabcd)
+            Contact delivery via FormSubmit (https://formsubmit.co), no signup,
+            no API key, sends straight to tourebakary1234@gmail.com.
+            One-time setup: the FIRST submission after this goes live triggers a
+            confirmation email from FormSubmit to that inbox. Click the
+            "Activate Form" link in it once; every submission after that
+            (including on later resubmits) is delivered automatically.
           -->
-          <form class="contact-form" id="contactForm" data-aos="fade-left" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+          <form class="contact-form" id="contactForm" data-aos="fade-left" action="https://formsubmit.co/ajax/tourebakary1234@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
             <div class="form-group">
               <label for="name" data-i18n="contact.formName">Nom complet</label>
               <input type="text" id="name" name="name" required />

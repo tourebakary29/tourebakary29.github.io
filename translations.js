@@ -40,10 +40,10 @@ const translations = {
       title: "À propos de moi",
       subtitle: "Transformer les données en décisions",
       p1: "Data Analyst junior passionné, je me spécialise dans la transformation de données brutes en informations claires et exploitables pour la prise de décision. Curieux et rigoureux, j'aime explorer les chiffres pour en extraire des tendances utiles aux équipes métier.",
-      p2: "Formé aux outils statistiques et de visualisation (SQL, R, STATA, SPSS, Excel, Power BI, Tableau, MS Project, QGIS), j'accompagne les entreprises dans leurs projets de reporting décisionnel : nettoyage de données, analyse statistique, création de tableaux de bord et automatisation des rapports.",
+      p2: "Formé aux outils statistiques et de visualisation (SQL, R, Python, STATA, SPSS, Excel, Power BI, Tableau, MS Project, QGIS), j'accompagne les entreprises dans leurs projets de reporting décisionnel : nettoyage de données, analyse statistique, création de tableaux de bord et automatisation des rapports.",
       stats: [
-        { value: "9", label: "outils maîtrisés" },
-        { value: "15+", label: "projets réalisés" },
+        { value: "10", label: "outils maîtrisés" },
+        { value: "12", label: "projets réalisés" },
         { value: "100%", label: "engagement qualité" },
       ],
     },
@@ -62,12 +62,12 @@ const translations = {
       viewDemo: "Voir la démo",
       items: {
         p1: {
-          title: "Dashboard Power BI — Performance des Ventes",
+          title: "Dashboard Power BI : Performance des Ventes",
           description:
             "Tableau de bord interactif Power BI analysant les performances de ventes d'une entreprise agroalimentaire fictive au Sénégal. Nettoyage des données via Power Query, création de mesures DAX (total ventes, panier moyen), et visualisations multiples avec filtres dynamiques par région, catégorie et canal de vente.",
         },
         p2: {
-          title: "Analyse de Données Bancaires — SQL",
+          title: "Analyse de Données Bancaires en SQL",
           description:
             "Base de données relationnelle et requêtes SQL analytiques pour une banque fictive multi-pays d'Afrique de l'Ouest. Modèle de données avec 7 tables reliées (clients, comptes, transactions, prêts), et 11 requêtes démontrant jointures, CTE, fonctions de fenêtrage (RANK, SUM OVER, LAG) et vues SQL.",
         },
@@ -77,7 +77,7 @@ const translations = {
             "Analyse d'une enquête de satisfaction client fictive avec SPSS pour un opérateur télécom. Test de fiabilité d'échelle (Alpha de Cronbach), ANOVA, corrélations, régression linéaire et logistique pour identifier les déterminants de la satisfaction et prédire le risque de départ (churn).",
         },
         p4: {
-          title: "Analyse des Performances de Vente — Afrique de l'Ouest",
+          title: "Analyse des Performances de Vente en Afrique de l'Ouest",
           description:
             "Dashboard Excel avancé analysant les performances commerciales d'une entreprise multi-pays (Sénégal, Côte d'Ivoire, Mali, Togo). Modèle de données en étoile avec tableaux croisés dynamiques, Power Pivot, et segments interactifs pour un filtrage dynamique par région, produit et vendeur.",
         },
@@ -117,7 +117,7 @@ const translations = {
             "Détection de transactions frauduleuses sur des paiements mobile money en Afrique de l'Ouest. Nettoyage d'un dataset de plus de 8 000 transactions, entraînement d'un modèle de classification par régression logistique (93% de précision), et dashboard interactif avec simulateur de score de risque en temps réel.",
         },
         p12: {
-          title: "Prédiction de Production d'Énergie Solaire — Machine Learning",
+          title: "Prédiction de Production d'Énergie Solaire par Machine Learning",
           description:
             "Pipeline complet de Machine Learning en Python pour prédire la production horaire d'une ferme solaire de 500 kW au Sénégal. Comparaison de 3 modèles (Régression Linéaire, Random Forest, XGBoost) avec split temporel strict, atteignant un R² de 0.99. Dashboard interactif Streamlit avec simulateur de prédiction en temps réel.",
         },
@@ -313,10 +313,10 @@ const translations = {
       title: "About me",
       subtitle: "Turning data into decisions",
       p1: "Passionate junior Data Analyst, I specialize in turning raw data into clear, actionable insights for decision-making. Curious and rigorous, I enjoy digging into numbers to surface trends that matter to business teams.",
-      p2: "Trained in statistical and visualization tools (SQL, R, STATA, SPSS, Excel, Power BI, Tableau, MS Project, QGIS), I support companies with their business reporting projects: data cleaning, statistical analysis, dashboard creation and report automation.",
+      p2: "Trained in statistical and visualization tools (SQL, R, Python, STATA, SPSS, Excel, Power BI, Tableau, MS Project, QGIS), I support companies with their business reporting projects: data cleaning, statistical analysis, dashboard creation and report automation.",
       stats: [
-        { value: "9", label: "tools mastered" },
-        { value: "15+", label: "projects delivered" },
+        { value: "10", label: "tools mastered" },
+        { value: "12", label: "projects delivered" },
         { value: "100%", label: "quality commitment" },
       ],
     },
@@ -335,12 +335,12 @@ const translations = {
       viewDemo: "View demo",
       items: {
         p1: {
-          title: "Power BI Dashboard — Sales Performance",
+          title: "Power BI Dashboard: Sales Performance",
           description:
             "Interactive Power BI dashboard analyzing sales performance for a fictional agri-food company in Senegal. Data cleaning via Power Query, DAX measures (total sales, average basket), and multiple visualizations with dynamic filters by region, category and sales channel.",
         },
         p2: {
-          title: "Banking Data Analysis — SQL",
+          title: "Banking Data Analysis in SQL",
           description:
             "Relational database and analytical SQL queries for a fictional multi-country West African bank. Data model with 7 related tables (customers, accounts, transactions, loans), and 11 queries demonstrating joins, CTEs, window functions (RANK, SUM OVER, LAG) and SQL views.",
         },
@@ -390,7 +390,7 @@ const translations = {
             "Fraud detection on mobile money payments across West Africa. Cleaning a dataset of over 8,000 transactions, training a logistic regression classification model (93% accuracy), and an interactive dashboard with a real-time fraud risk score simulator.",
         },
         p12: {
-          title: "Solar Energy Production Prediction — Machine Learning",
+          title: "Solar Energy Production Prediction with Machine Learning",
           description:
             "Complete Machine Learning pipeline in Python predicting hourly production of a 500 kW solar farm in Senegal. Comparison of 3 models (Linear Regression, Random Forest, XGBoost) with strict temporal split, achieving R² of 0.99. Interactive Streamlit dashboard with real-time prediction simulator.",
         },
@@ -561,6 +561,7 @@ const sharedData = {
   skills: [
     { key: "sql", name: "SQL", icon: "fa-database", level: 88 },
     { key: "r", name: "R", icon: "fa-r-project", level: 82 },
+    { key: "python", name: "Python", icon: "fa-laptop-code", level: 85 },
     { key: "stata", name: "STATA", icon: "fa-chart-bar", level: 80 },
     { key: "spss", name: "SPSS", icon: "fa-chart-simple", level: 75 },
     { key: "excel", name: "Excel", icon: "fa-file-excel", level: 95 },
