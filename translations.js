@@ -97,9 +97,9 @@ const translations = {
             "Modélisation prédictive du rendement agricole au Sénégal à partir de données de pluviométrie, température et usage d'engrais. Nettoyage d'un dataset de plus de 6 000 exploitations, entraînement d'un modèle de régression (R² de 0.93), et dashboard interactif avec simulateur de prédiction de rendement en temps réel.",
         },
         p8: {
-          title: "Planification de projet sous MS Project",
+          title: "Plan de Déploiement de la Plateforme d'Analyse de Données",
           description:
-            "Planning détaillé et suivi d'avancement d'un projet multi-équipes sous MS Project : jalons, chemin critique et allocation des ressources.",
+            "Plan de projet complet pour le déploiement d'une plateforme d'analyse de données en entreprise avec MS Project. 46 tâches réparties en 8 phases (cadrage, infrastructure, ETL, dashboards, tests, formation, déploiement, clôture), avec diagramme de Gantt, dépendances entre tâches, jalons de validation et ressources par rôle.",
         },
         p9: {
           title: "Accessibilité aux Centres de Santé (SIG)",
@@ -370,9 +370,9 @@ const translations = {
             "Predictive modeling of agricultural yield in Senegal using rainfall, temperature and fertilizer data. Cleaning a dataset of over 6,000 farms, training a regression model (R² of 0.93), and an interactive dashboard with a real-time yield prediction simulator.",
         },
         p8: {
-          title: "Project Planning in MS Project",
+          title: "Data Analysis Platform Deployment Plan",
           description:
-            "Detailed schedule and progress tracking for a multi-team project in MS Project: milestones, critical path and resource allocation.",
+            "Complete project plan for deploying an enterprise data analytics platform with MS Project. 46 tasks across 8 phases (scoping, infrastructure, ETL, dashboards, testing, training, deployment, closure), with Gantt chart, task dependencies, validation milestones, and role-based resources.",
         },
         p9: {
           title: "Health Facility Accessibility (GIS Analysis)",
@@ -620,7 +620,7 @@ const sharedData = {
       id: "p8",
       tags: ["MS Project"],
       image: "assets/projects/msproject-planning.svg",
-      link: "#",
+      codeUrl: "https://github.com/tourebakary29/msproject-data-platform",
     },
     {
       id: "p9",
